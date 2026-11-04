@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ticket Booking</title>
+</head>
+<body>
+
+    <!-- Errors found and corrected in the original code:
+    Error 1 (Line 1): Missing html in DOCTYPE declaration.
+    Error 2 (Line 9): Incorrect closing tags for h1 and span.
+    Error 3 (Line 11): Used span instead of div for content.
+    Error 4 (Line 13): Used < instead of &lt; and missing semicolon in &amp;.
+    Error 5 (Line 14-15): The total calculation adds the numbers as text instead of numbers.
+    Error 6 (Line 18): Email input type is misspelled as emial.
+    Error 7 (Line 18): Email input is missing required attribute.
+    Error 8 (Line 22-26): Datalist ID does not match the input list attribute.
+    Error 9 (Line 32): The min and max values are reversed.
+    Error 10 (Line 33): The output for attribute is incorrect.
+    Error 11 (Line 37): Incorrect entity &Copy; should be &copy;.
+    Error 12 (Line 40-41): Extra closing body and html tags.
+    -->
+
+    <!-- Header Section -->
+    <div id="header">
+        <h1>e-Ticket <span>Your Campus Cinema</span></h1>
+    </div>
+
+    <!-- Navigation Section -->
+    <div id="nav">
+        <a href="#content">Home</a> |
+        <a href="#sidebar">Now Showing</a> |
+        <a href="#booking">Book Ticket</a>
+    </div>
+
+    <!-- Main Content Section -->
+    <div id="content">
+        <h2>Book Your Ticket</h2>
+        <p>Promotion: tickets &lt; RM10 for students &amp; staff!</p>
+
+        <!-- Ticket Booking Form -->
+        <div id="booking">
+            <form action="#" oninput="
+                total.value = Number(adult.value) + Number(child.value);
+                price.value = (Number(adult.value) * 12) + (Number(child.value) * 8);">
+
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"
+                placeholder="Enter your name" required autofocus>
+                <br><br>
+
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <!-- Phone Number Input -->
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone"
+                placeholder="Enter your phone number" required>
+                <br><br>
+
+                <label for="date">Show Date:</label><br>
+                <input type="date" id="date" name="date">
+                <br><br>
+
+                <!-- Show Time Input -->
+                <label for="time">Show Time:</label><br>
+                <input type="time" id="time" name="time">
+                <br><br>
+
+                <label for="movie">Movie:</label><br>
+                <input type="text" id="movie" name="movie" list="movies">
+
+                <!-- Movie Suggestions -->
+                <datalist id="movies">
+                    <option value="Five Feet Apart">
+                    <option value="Kuroko's Basketball: Last Game">
+                    <option value="My Name">
+                </datalist>
+                <br><br>
+
+                <!-- Adult Ticket Input -->
+                <label for="adult">Adult Tickets (RM12 each):</label><br>
+                <input type="number" id="adult" name="adult"
+                min="0" value="0">
+                <br><br>
+
+                <!-- Child Ticket Input -->
+                <label for="child">Child Tickets (RM8 each):</label><br>
+                <input type="number" id="child" name="child"
+                min="0" value="0">
+                <br><br>
+
+                <!-- Rating Slider -->
+                <label for="rating">Rate Our Service:</label><br>
+                <input type="range" id="rating" name="rating"
+                min="1" max="5" step="1">
+                <br><br>
+
+                <!-- Total Ticket Calculator -->
+                <p>
+                    Total Tickets:
+                    <output name="total" for="adult child">0</output>
+                </p>
+
+                <!-- Total Price Calculator -->
+                <p>
+                    Total Price: RM
+                    <output name="price" for="adult child">0</output>
+                </p>
+
+                <input type="submit" value="Book Now">
+            </form>
+        </div>
+    </div>
+
+    <!-- Sidebar Section -->
+    <div id="sidebar">
+        <h2>Now Showing</h2>
+        <ul>
+            <li>
+                <strong>Five Feet Apart</strong>
+                <span>(PG13)</span>
+                <a href="https://www.youtube.com/results?search_query=Five+Feet+Apart+trailer">
+                Watch Trailer
+                </a>
+            </li>
+
+            <li>
+                <strong>Kuroko's Basketball: Last Game</strong>
+                <span>(PG13)</span>
+                <a href="https://www.youtube.com/results?search_query=Kuroko+Basketball+Last+Game+trailer">
+                Watch Trailer
+                </a>
+            </li>
+
+            <li>
+                <strong>My Name</strong>
+                <span>(18)</span>
+                <a href="https://www.youtube.com/results?search_query=My+Name+Netflix+trailer">
+                Watch Trailer
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer">
+        <p>
+            &copy; 2026 e-Ticket&reg; - Campus Cinema
+            &lt; RM10 every Tuesday &amp; more!
+        </p>
+        <p>All rights reserved.</p>
+    </div>
+</body>
+</html>

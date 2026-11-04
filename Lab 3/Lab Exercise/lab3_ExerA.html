@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chocacake Cake Cafe - Online Order</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div id="header">
+        <h1>Chocacake <span>- <em>Cake cutting all day everyday!</em></span></h1>
+        <p>Welcome to Chocacake!</p>
+    </div>
+
+    <!-- Navigation Section -->
+    <div id="nav">
+        <a href="#header">Home</a> |
+        <a href="#sidebar">Price List</a> |
+        <a href="#order">Order Now</a>
+    </div>
+
+    <!-- Main Content Section -->
+    <div id="content">
+
+        <h2>About Our Bakery</h2>
+
+        <p>
+            Welcome to <strong>Chocacake Cake Cafe</strong>!
+            We offer <em>fresh and delicious</em> cupcakes and cake slices.
+            All our products are <span>homemade with love</span>.
+            <br>We also provide pre-order services for special occasions.
+            Visit our <a href="#order">order form</a> to place your order today.
+        </p>
+
+        <h2>Our Products</h2>
+        <ul>
+            <li>Chocolate Cupcakes</li>
+            <li>Vanilla Cupcakes</li>
+            <li>Manggo Cheesecake Slices</li>
+            <li>Oreo Cheesecake Slices</li>
+            <li>Batik Indulgence Cake Slices</li>
+        </ul>
+
+        <!-- Order Form Section -->
+        <div id="order">
+            <h2>Online Order Form</h2>
+
+            <form oninput="total.value = (cupcakes.value * 3 + slices.value * 5).toFixed(2)">
+
+                <label for="customer">Customer Name:</label><br>
+                <input type="text" id="customer" name="customer"
+                placeholder="Enter your name" required autofocus>
+                <br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone"
+                placeholder="Enter your phone number" required>
+                <br><br>
+
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email"
+                placeholder="Enter your email" required>
+                <br><br>
+
+                <label for="date">Pick-up Date:</label><br>
+                <input type="date" id="date" name="date">
+                <br><br>
+
+                <label for="time">Pick-up Time:</label><br>
+                <input type="time" id="time" name="time">
+                <br><br>
+
+                <label for="flavour">Choose Flavour:</label><br>
+                <input type="text" id="flavour" name="flavour" list="flavours"
+                placeholder="Select your flavour">
+
+                <datalist id="flavours">
+                    <option value="Chocolate">
+                    <option value="Vanilla">
+                    <option value="Manggo">
+                    <option value="Oreo">
+                    <option value="Batik">
+                </datalist>
+                <br><br>
+
+                <label for="colour">Choose Icing Colour:</label><br>
+                <input type="color" id="colour" name="colour">
+                <br><br>
+
+                <label for="sweetness">Sweetness Level (1-5):</label><br>
+                <input type="range" id="sweetness" name="sweetness"
+                min="1" max="5" step="1">
+                <br><br>
+
+                <!-- Price Calculator Section -->
+                <h2>Calculate Your Order</h2>
+
+                <label for="cupcakes">Cupcakes (RM 3.00 each):</label><br>
+                <input type="number" id="cupcakes" name="cupcakes"
+                min="0" value="0">
+                <br><br>
+
+                <label for="slices">Cake Slices (RM 5.00 each):</label><br>
+                <input type="number" id="slices" name="slices"
+                min="0" value="0">
+                <br><br>
+
+                <p>
+                    Total Price: RM
+                    <output name="total" for="cupcakes slices">0.00</output>
+                </p>
+
+                <input type="submit" value="Submit Order">
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Sidebar Section -->
+    <div id="sidebar">
+        <h2>Price List</h2>
+
+        <ul>
+            <li>Cupcakes - RM 3.00 each</li>
+            <li>Cake Slices - RM 5.00 each</li>
+            <li>Chocolate Cupcakes - RM 3.00</li>
+            <li>Vanilla Cupcakes - RM 3.00</li>
+        </ul>
+
+        <p>Orders &gt; Buy 5 pieces of any item, get a free drink!</p>
+
+        <p>Brand: Chocacake &reg;</p>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer">
+        <p>&copy; 2026 Chocacake Cake Cafe. All rights reserved.</p>
+        <p>Thank you for buying with Chocacake!</p>
+    </div>
+</body>
+</html>
+
+<!-- Testing Observations:
+1. When clicking Submit with all fields empty,
+   the browser displays a validation message because
+   the required fields are empty.
+
+2. When entering "myemail" in the email field,
+   the browser rejects it because it is not a valid
+   email format.
+
+3. The form cannot be submitted until the required
+   fields contain valid information.
+-->
