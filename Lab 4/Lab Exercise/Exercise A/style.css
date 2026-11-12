@@ -1,0 +1,393 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F1F5F9;
+    color: #334155;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Header Styling */
+.site-header {
+    background: linear-gradient(135deg, #1E3A8A, #64748B);
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.eyebrow {
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.site-header h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+    text-decoration: underline;
+}
+
+.tagline {
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.header-button {
+    display: inline-block;
+    background-color: #FFFFFF;
+    color: #1E3A8A;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.header-button:hover {
+    background-color: #DBEAFE;
+}
+
+/* Navigation Bar */
+.site-nav {
+    background-color: #334155;
+    padding: 15px 0;
+}
+
+.site-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.site-nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 12px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.site-nav a:link {
+    color: white;
+}
+
+.site-nav a:visited {
+    color: #DBEAFE;
+}
+
+.site-nav a:hover {
+    background-color: #2563EB;
+    color: white;
+}
+
+.site-nav a:active {
+    background-color: #FACC15;
+    color: #1E293B;
+}
+
+/* Main Content Sections */
+main {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.content-section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.content-section h2 {
+    color: #1E3A8A;
+    font-size: 26px;
+    margin-bottom: 18px;
+}
+
+.content-section p {
+    margin-bottom: 15px;
+}
+
+/* Destination Cards */
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.destination-card {
+    background-color: #EFF6FF;
+    border: 1px solid #BFDBFE;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    color: #1E3A8A;
+    font-size: 21px;
+    margin-bottom: 12px;
+    text-decoration: overline;
+}
+
+/* Promotion Prices */
+.old-price {
+    color: #777777;
+    text-decoration: line-through;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.promo-price {
+    color: #DC2626;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* Seat Availability */
+.seat-info {
+    background-color: #F1F5F9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.seat-info h3 {
+    color: #1E3A8A;
+    margin-bottom: 10px;
+}
+
+.seat-info meter {
+    width: 80%;
+    height: 25px;
+    margin: 10px 0;
+    accent-color: #2563EB;
+}
+
+.seat-caption {
+    color: #DC2626;
+    font-weight: bold;
+}
+
+/* Video Styling */
+.video-card {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.video-card video {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #000000;
+}
+
+.video-card figcaption {
+    color: #64748B;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 12px;
+}
+
+/* Trip Interest Form */
+.trip-form {
+    background-color: #EFF6FF;
+    border: 1px solid #BFDBFE;
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.trip-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #1E3A8A;
+}
+
+.trip-form input,
+.trip-form select,
+.trip-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #CBD5E1;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.trip-form input:focus,
+.trip-form select:focus,
+.trip-form textarea:focus {
+    outline: 2px solid #2563EB;
+    border-color: #2563EB;
+}
+
+/* Submit Button */
+.submit-button {
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #1E3A8A;
+}
+
+.submit-button:active {
+    background-color: #FACC15;
+    color: #1E293B;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #334155;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.site-footer address {
+    font-style: normal;
+    margin: 10px 0;
+}
+
+.site-footer a {
+    color: #BFDBFE;
+    text-decoration: underline;
+}
+
+.site-footer a:link {
+    color: #BFDBFE;
+}
+
+.site-footer a:visited {
+    color: #DDD6FE;
+}
+
+.site-footer a:hover {
+    color: white;
+    text-decoration: overline;
+}
+
+.site-footer a:active {
+    color: #FACC15;
+}
+
+.back-to-top {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Responsive Design - Tablet */
+@media screen and (max-width: 768px) {
+
+    .site-header h1 {
+        font-size: 32px;
+    }
+
+    .destination-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .content-section {
+        padding: 22px;
+    }
+
+}
+
+/* Responsive Design - Mobile */
+@media screen and (max-width: 480px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .site-header {
+        padding: 45px 15px;
+    }
+
+    .site-header h1 {
+        font-size: 27px;
+    }
+
+    .tagline {
+        font-size: 14px;
+    }
+
+    .site-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site-nav a {
+        padding: 8px 15px;
+    }
+
+    .destination-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content-section h2 {
+        font-size: 22px;
+    }
+
+    .trip-form {
+        padding: 15px;
+    }
+
+}

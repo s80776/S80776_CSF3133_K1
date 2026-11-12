@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Café Campus</title>
+    <link rel="stylesheet" type="text/css" href="cafe.css">
+</head>
+
+<body>
+
+    <!-- Corrections to the original code:
+    Line 7: Incorrect CSS comment syntax. Changed to /* Navigation bar */.
+    Line 9: Changed list-style-type: no to list-style-type: none.
+    Line 14-15: Rearranged link pseudo-classes into the correct order.
+    Line 17: Changed text-decoration: overlined to text-decoration: overline.
+    Line 18: Added missing colon after the color property.
+    Line 22: Added missing closing brace for the #intro selector.
+    Line 22-25: Separated the highlight selector from the #intro selector.
+    Line 34: Added # to the menu navigation link.
+    Line 35-36: Removed unnecessary asterisks from the navigation links.
+    Line 41: Changed CSS selector #intro to .intro to match the HTML class.
+    Line 42 and 46: Changed duplicate article IDs into unique IDs.
+    Line 53: Added controls attribute to the video element.
+    Line 54: Changed type="mp4" to type="video/mp4".    
+    -->
+
+    <header id="home">
+        <h1>e-Café Campus</h1>
+        <p>Fresh Coffee, Delicious Food, Happy Students!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- Today's Menu Section -->
+        <section id="menu">
+            <h2>Today's Menu</h2>
+
+            <p class="intro">
+                Freshly brewed coffee and local delights every day.
+            </p>
+
+            <article id="kopi-tarik" class="menu-item">
+                <h3>Kopi Tarik</h3>
+                <p>
+                    Enjoy our delicious and freshly brewed Kopi Tarik.
+                </p>
+                <p class="old-price">Original Price: RM 4.50</p>
+                <p class="highlight">Promotion Price: RM 3.50</p>
+            </article>
+
+            <article id="nasi-lemak" class="menu-item">
+                <h3>Nasi Lemak</h3>
+                <p>
+                    Traditional nasi lemak served with sambal and delicious side dishes.
+                </p>
+                <p class="old-price">Original Price: RM 6.00</p>
+                <p class="highlight">Promotion Price: RM 5.00</p>
+            </article>
+        </section>
+
+        <!-- Video Section -->
+        <section id="video">
+            <h2>Watch Our Story</h2>
+
+            <figure>
+                <video controls>
+                    <source src="cafe.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <figcaption>
+                    Video 1: Discover the delicious food and drinks at e-Café Campus.
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- Feedback Form Section -->
+        <section id="feedback">
+            <h2>Customer Feedback</h2>
+
+            <form action="#" method="post">
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <p>Dining Preference:</p>
+                <label>
+                    <input type="radio" name="dining" value="dine-in">
+                    Dine-in
+                </label>
+
+                <label>
+                    <input type="radio" name="dining" value="take-away">
+                    Take-away
+                </label>
+
+                <p>Favourite Items:</p>
+                <label>
+                    <input type="checkbox" name="favourite" value="coffee">
+                    Kopi Tarik
+                </label>
+
+                <label>
+                    <input type="checkbox" name="favourite" value="nasi-lemak">
+                    Nasi Lemak
+                </label>
+
+                <label>
+                    <input type="checkbox" name="favourite" value="tea">
+                    Tea
+                </label>
+                <br>
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>&copy; 2026 e-Café Campus. All Rights Reserved.</p>
+        <address>
+            Contact us:
+            <a href="mailto:ecafe@example.com">ecafe@example.com</a>
+        </address>
+    </footer>
+</body>
+</html>

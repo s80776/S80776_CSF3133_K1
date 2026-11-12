@@ -1,0 +1,240 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F4F6F7;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #1A5276;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    text-decoration: overline;
+    margin-bottom: 5px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #34495E;
+    padding: 12px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Link States */
+a:link {
+    color: #1A5276;
+}
+
+a:visited {
+    color: #7D3C98;
+}
+
+a:hover {
+    color: #E67E22;
+}
+
+a:active {
+    color: #C0392B;
+}
+
+/* Navigation Link Colours */
+nav a:link,
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    color: #F39C12;
+    background-color: #566573;
+}
+
+nav a:active {
+    color: #FDEBD0;
+}
+
+/* Main Content */
+main {
+    width: 85%;
+    margin: 25px auto;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #1A5276;
+    border-bottom: 2px solid #AEB6BF;
+    padding-bottom: 8px;
+}
+
+.intro {
+    font-size: 18px;
+    background-color: #FDEBD0;
+    padding: 15px;
+    text-align: justify;
+}
+
+/* Menu Items */
+.menu-item {
+    background-color: #EBF5FB;
+    border-left: 5px solid #1A5276;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.menu-item h3 {
+    color: #1A5276;
+}
+
+.old-price {
+    color: #777777;
+    text-decoration: line-through;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #C0392B;
+    font-size: 18px;
+}
+
+/* Video */
+figure {
+    margin: 15px 0;
+    text-align: center;
+}
+
+video {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: auto;
+    border-radius: 8px;
+    background-color: #000000;
+}
+
+figcaption {
+    color: #666666;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Feedback Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #AEB6BF;
+    border-radius: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+button {
+    background-color: #1A5276;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #E67E22;
+}
+
+/* Footer */
+footer {
+    background-color: #34495E;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer address {
+    font-style: normal;
+}
+
+footer a:link,
+footer a:visited {
+    color: white;
+}
+
+footer a:hover {
+    color: #F39C12;
+}
+
+footer a:active {
+    color: #FDEBD0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    main {
+        width: 95%;
+    }
+
+    nav li {
+        margin: 5px;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav li {
+        display: block;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}

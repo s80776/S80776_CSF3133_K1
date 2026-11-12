@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover beautiful destinations in Terengganu.">
+
+    <title>Visit Terengganu | Tourism Promotion</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        #trip {
+            border-top: 5px solid #2563EB;
+        }
+
+        .special-note {
+            background-color: #EFF6FF;
+            border-left: 4px solid #2563EB;
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        .section-heading {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="site-header" id="home">
+        <div class="container">
+            <p class="eyebrow">TOURISM MALAYSIA</p>
+            <h1>Visit Terengganu</h1>
+            <p class="tagline">
+                Experience beautiful islands, nature and unforgettable adventures.
+            </p>
+            <a href="#destinations" class="header-button">Explore Destinations</a>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="site-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#trip">Trip Interest</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <!-- Introduction Section -->
+        <section id="about" class="content-section">
+            <h2 class="section-heading">Welcome to Terengganu</h2>
+
+            <p class="special-note">
+                Terengganu is one of Malaysia's most beautiful destinations.
+                It is famous for its crystal-clear waters, tropical islands,
+                traditional culture and delicious local food.
+            </p>
+        </section>
+
+        <!-- Destinations Section -->
+        <section id="destinations" class="content-section">
+            <h2 class="section-heading">Popular Destinations</h2>
+
+            <p>
+                Discover our recommended destinations and special travel promotions.
+            </p>
+
+            <div class="destination-grid">
+
+                <article class="destination-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=900&q=80"
+                        alt="Beautiful tropical beach">
+
+                    <div class="card-content">
+                        <h3>Pulau Redang</h3>
+
+                        <p>
+                            Enjoy crystal-clear water, white sandy beaches
+                            and exciting snorkelling activities.
+                        </p>
+
+                        <p class="old-price">Original Price: RM 450</p>
+                        <p class="promo-price">Promotion Price: RM 350</p>
+                    </div>
+                </article>
+
+                <article class="destination-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=900&q=80"
+                        alt="Tropical island with clear blue sea">
+
+                    <div class="card-content">
+                        <h3>Pulau Perhentian</h3>
+
+                        <p>
+                            Explore beautiful marine life, relax by the beach
+                            and enjoy island adventures.
+                        </p>
+
+                        <p class="old-price">Original Price: RM 400</p>
+                        <p class="promo-price">Promotion Price: RM 300</p>
+                    </div>
+                </article>
+
+                <article class="destination-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80"
+                        alt="Beautiful green lake and mountain scenery">
+
+                    <div class="card-content">
+                        <h3>Tasik Kenyir</h3>
+
+                        <p>
+                            Experience peaceful nature, scenic lakes,
+                            waterfalls and exciting outdoor activities.
+                        </p>
+
+                        <p class="old-price">Original Price: RM 250</p>
+                        <p class="promo-price">Promotion Price: RM 180</p>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="seat-info">
+                <h3>Trip Seat Availability</h3>
+
+                <p>Number of seats filled: 28 out of 40</p>
+
+                <meter min="0" max="40" value="28">
+                    28 out of 40 seats filled
+                </meter>
+
+                <p class="seat-caption">Only 12 seats remaining!</p>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section id="video" class="content-section">
+            <h2 class="section-heading">Explore Terengganu</h2>
+
+            <p>
+                Watch our promotional video and discover the beauty of Terengganu.
+            </p>
+
+            <figure class="video-card">
+                <video controls width="800" height="450">
+                    <source src="terengganu.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <figcaption>
+                    Video 1: Discover the beautiful destinations of Terengganu.
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- Trip Interest Form -->
+        <section id="trip" class="content-section">
+            <h2 class="section-heading">Plan Your Trip</h2>
+
+            <p>
+                Interested in visiting Terengganu? Fill in the form below
+                and let us know about your travel plans.
+            </p>
+
+            <form class="trip-form" action="#" method="get">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="example@email.com"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="destination">Preferred Destination</label>
+                    <select id="destination" name="destination" required>
+                        <option value="">Choose a destination</option>
+                        <option value="Pulau Redang">Pulau Redang</option>
+                        <option value="Pulau Perhentian">Pulau Perhentian</option>
+                        <option value="Tasik Kenyir">Tasik Kenyir</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Preferred Travel Date</label>
+                    <input
+                        type="date"
+                        id="date"
+                        name="date"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="people">Number of Visitors</label>
+                    <input
+                        type="number"
+                        id="people"
+                        name="people"
+                        min="1"
+                        max="12"
+                        value="1"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Additional Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        placeholder="Tell us about your trip..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">
+                    Submit Enquiry
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="site-footer" id="contact">
+        <div class="container">
+            <p>&copy; 2026 Visit Terengganu Tourism Promotion.</p>
+
+            <address>
+                Contact us:
+                <a href="mailto:visit.terengganu@example.com">
+                    visit.terengganu@example.com
+                </a>
+            </address>
+
+            <a href="#home" class="back-to-top">Back to Top</a>
+        </div>
+    </footer>
+
+</body>
+</html>
