@@ -1,0 +1,192 @@
+/* General Page Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F5F5;
+    background-image: url("paper.gif");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: auto;
+    color: #2C2C2C;
+}
+
+/* Header Styling */
+header {
+    background-image: url("books.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+    min-height: 210px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Header Title */
+header h1 {
+    font-family: 'Merriweather', serif;
+    color: white;
+    font-size: 2.2rem;
+    margin: 0 0 12px;
+    text-align: center;
+}
+
+/* Header Paragraph */
+header p {
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+}
+
+/* Navigation List */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Navigation List Items */
+nav li {
+    float: left;
+}
+
+/* Navigation Links */
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Navigation Hover Effect */
+nav li a:hover {
+    background-color: #111;
+}
+
+/* Active Home Link */
+nav li a.active {
+    background-color: #1B4F72;
+}
+
+/* Main Content */
+main {
+    width: 90%;
+    max-width: 980px;
+    margin: 30px auto;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 35px;
+}
+
+/* Paragraph Styling */
+p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Intro Paragraph */
+.intro {
+    margin-bottom: 20px;
+}
+
+/* Special Notice */
+.notice {
+    background-color: #D6EAF8;
+    padding: 15px;
+    border-left: 5px solid #3498DB;
+    border-radius: 5px;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+/* Table Wrapper */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+/* Product Table */
+#products {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 15px;
+}
+
+/* Table Cells */
+#products td,
+#products th {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+/* Table Header */
+#products th {
+    background-color: #1B4F72;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* Even Table Rows */
+#products tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+/* Table Hover Effect */
+#products tr:hover {
+    background-color: #efc6a2e8;
+}
+
+/* Price Column */
+#products td.price {
+    text-align: right;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #EFEFEF;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Footer Paragraph */
+footer p {
+    text-align: center;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    nav li {
+        float: none;
+    }
+
+    nav li a {
+        text-align: left;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+}
