@@ -1,0 +1,457 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
+
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #f3f7f8;
+    color: #243746;
+    line-height: 1.7;
+}
+
+.site-header {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+    background: linear-gradient(120deg, rgba(7, 39, 61, 0.96), rgba(0, 119, 130, 0.88)),
+                url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1600&q=85');
+    background-size: cover;
+    background-position: center;
+}
+
+.header-content h1 {
+    max-width: 850px;
+    margin: 8px auto;
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    line-height: 1.2;
+}
+
+.eyebrow {
+    color: #13b8ad;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+
+.site-header .eyebrow {
+    color: #9ff5e9;
+}
+
+.subtitle {
+    margin-top: 12px;
+    color: #e0f2f1;
+    font-size: 1.08rem;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #082b40;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.nav-inner {
+    max-width: 1120px;
+    min-height: 68px;
+    margin: auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+.brand img {
+    width: 60px;
+    height: 55px;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 8px;
+    padding: 3px;
+}
+
+.brand-text {
+    max-width: 160px;
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-links a {
+    color: #e8f1f4;
+    text-decoration: none;
+    font-size: 0.94rem;
+    font-weight: 600;
+    padding: 10px 13px;
+    border-radius: 7px;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.nav-links a:hover {
+    color: #082b40;
+    background-color: #9ff5e9;
+}
+
+.container {
+    width: min(1120px, 92%);
+    margin: 0 auto;
+}
+
+section {
+    padding: 75px 0;
+    scroll-margin-top: 85px;
+}
+
+.section-heading {
+    margin-bottom: 28px;
+}
+
+.section-heading h2,
+.contact-card h2 {
+    color: #082b40;
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(1.7rem, 3vw, 2.25rem);
+    line-height: 1.25;
+    margin: 7px 0;
+}
+
+.section-description {
+    color: #647783;
+    max-width: 650px;
+}
+
+.content-card {
+    padding: 34px 38px;
+    background-color: white;
+    border: 1px solid #e1eaed;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(8, 43, 64, 0.06);
+}
+
+.content-card h3 {
+    color: #087f83;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+.content-card p {
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+.content-card p:last-child {
+    margin-bottom: 0;
+}
+
+.faculties-section {
+    border-top: 1px solid #dce7e9;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    background-color: white;
+    border-radius: 13px;
+    box-shadow: 0 8px 25px rgba(8, 43, 64, 0.06);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+    text-align: left;
+}
+
+thead {
+    color: white;
+    background-color: #087f83;
+}
+
+th, td {
+    padding: 15px 18px;
+    border-bottom: 1px solid #e2eaec;
+}
+
+th {
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #edf7f6;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tbody tr:hover {
+    background-color: #d8f1ed;
+    transition: background-color 0.2s ease;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.table-note {
+    margin-top: 12px;
+    color: #71818a;
+    font-size: 0.88rem;
+}
+
+.highlights-section {
+    border-top: 1px solid #dce7e9;
+}
+
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.highlight-card {
+    padding: 27px;
+    background-color: white;
+    border: 1px solid #e1eaed;
+    border-radius: 13px;
+    box-shadow: 0 8px 25px rgba(8, 43, 64, 0.05);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 13px 28px rgba(8, 43, 64, 0.11);
+}
+
+.highlight-number {
+    color: #079b96;
+    font-family: 'Manrope', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.highlight-card h3 {
+    color: #082b40;
+    margin: 5px 0 8px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.highlight-card p {
+    color: #647783;
+    font-size: 0.95rem;
+}
+
+.contact-section {
+    padding-top: 25px;
+    padding-bottom: 75px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 35px 40px;
+    color: white;
+    background: linear-gradient(115deg, #082b40, #087f83);
+    border-radius: 16px;
+}
+
+.contact-card h2 {
+    color: white;
+}
+
+.contact-card .eyebrow {
+    color: #9ff5e9;
+}
+
+.contact-card p:not(.eyebrow) {
+    color: #e1f1f1;
+}
+
+.contact-button {
+    flex-shrink: 0;
+    padding: 12px 20px;
+    color: #082b40;
+    background-color: #a7f3e8;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.contact-button:hover {
+    background-color: white;
+    transform: translateY(-2px);
+}
+
+.site-footer {
+    padding: 22px 15px;
+    color: #d9e8ec;
+    background-color: #061f30;
+    text-align: center;
+    font-size: 0.88rem;
+}
+
+/* Responsive layout for tablets and mobile phones */
+@media (max-width: 700px) {
+    .nav-inner {
+        flex-direction: column;
+        padding: 12px 15px;
+        gap: 5px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2px;
+    }
+
+    .nav-links a {
+        padding: 7px 9px;
+        font-size: 0.85rem;
+    }
+
+    section {
+        padding: 55px 0;
+    }
+
+    .content-card {
+        padding: 25px 22px;
+    }
+
+    .highlight-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 28px 25px;
+    }
+}
+
+
+/* PURPLE + GOLD + IVORY THEME */
+
+body {
+    background-color: #F8F6F0;
+    color: #302D3D;
+}
+
+.site-header {
+    background:
+        linear-gradient(120deg, rgba(55,54,142,0.94), rgba(179,120,18,0.72)),
+        url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1600&q=85');
+    background-size: cover;
+    background-position: center;
+}
+
+.site-header .eyebrow {
+    color: #FDD79A;
+}
+
+.subtitle {
+    color: #F8F0E2;
+}
+
+.navbar {
+    background-color: #37368E;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+}
+
+.nav-links a:hover {
+    color: #37368E;
+    background-color: #FDD79A;
+}
+
+.section-heading h2,
+.contact-card h2 {
+    color: #37368E;
+}
+
+.eyebrow {
+    color: #B37812;
+}
+
+.content-card h3 {
+    color: #37368E;
+}
+
+thead {
+    background-color: #37368E;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #F1EDF8;
+}
+
+tbody tr:hover {
+    background-color: #E5DDF0;
+}
+
+.highlight-number {
+    color: #B37812;
+}
+
+.highlight-card h3 {
+    color: #37368E;
+}
+
+.contact-card {
+    background: linear-gradient(115deg, #37368E, #5B559F);
+}
+
+.contact-card h2 {
+    color: #FFFFFF;
+}
+
+.contact-card .eyebrow {
+    color: #FDD79A;
+}
+
+.contact-button {
+    background-color: #FDD79A;
+    color: #37368E;
+}
+
+.contact-button:hover {
+    background-color: #FFFFFF;
+}
+
+.site-footer {
+    background-color: #29275F;
+    color: #FFFFFF;
+}
