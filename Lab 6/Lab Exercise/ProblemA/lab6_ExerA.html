@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors Game</title>
+    <!-- Link the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header section: game title and instruction -->
+    <header>
+        <h1>Rock, Paper, Scissors</h1>
+        <p>Enter your name, start the game and choose Rock, Paper or Scissors.</p>
+    </header>
+
+    <main>
+        <!-- Player section: name input and start button -->
+        <section class="player-section">
+            <h2>Player</h2>
+            <label for="playerName">Your name:</label>
+            <input type="text" id="playerName" placeholder="Enter your name">
+            <button type="button" onclick="startGame()">Start Game</button>
+            <p id="welcome"></p>
+        </section>
+
+        <!-- Game section: three choices and two images -->
+        <section class="game-section">
+            <h2>Make Your Choice</h2>
+            <div class="choice-buttons">
+                <button type="button" onclick="playRound('rock')">Rock</button>
+                <button type="button" onclick="playRound('paper')">Paper</button>
+                <button type="button" onclick="playRound('scissors')">Scissors</button>
+            </div>
+            <div class="images">
+                <div class="choice-card">
+                    <h3>You</h3>
+                    <img id="playerImg" src="rock.png" alt="Your choice">
+                    <p id="playerChoice">Waiting...</p>
+                </div>
+                <div class="versus">VS</div>
+                <div class="choice-card">
+                    <h3>Computer</h3>
+                    <img id="computerImg" src="rock.png" alt="Computer choice">
+                    <p id="computerChoice">Waiting...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Result section: result message and scoreboard -->
+        <section class="result-section">
+            <h2>Result</h2>
+            <p id="result">Start the game to play.</p>
+            <div class="scoreboard">
+                <div>Wins: <span id="wins">0</span></div>
+                <div>Losses: <span id="losses">0</span></div>
+                <div>Draws: <span id="draws">0</span></div>
+            </div>
+        </section>
+
+        <!-- History section: table of all rounds -->
+        <section class="history-section">
+            <h2>Game History</h2>
+            <table id="history">
+                <thead>
+                    <tr><th>Round</th><th>You</th><th>Computer</th><th>Result</th></tr>
+                </thead>
+                <tbody id="historyBody"></tbody>
+            </table>
+            <div class="action-buttons">
+                <button type="button" onclick="showSummary()">Show Summary</button>
+                <button type="button" onclick="resetGame()">Reset</button>
+            </div>
+            <p id="summary"></p>
+        </section>
+    </main>
+
+    <!-- Footer section: start date and time and copyright -->
+    <footer>
+        <p id="startTime"></p>
+        <p>&copy; 2026 Computer Science Club</p>
+    </footer>
+
+    <!-- Link the external JavaScript file -->
+    <script src="game.js"></script>
+</body>
+</html>

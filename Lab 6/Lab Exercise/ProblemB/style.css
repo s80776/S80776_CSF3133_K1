@@ -1,0 +1,111 @@
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f6f9;
+    color: #263238;
+    margin: 0;
+    padding: 24px;
+}
+
+/* Header styling */
+header {
+    max-width: 760px;
+    margin: 0 auto 22px;
+    padding: 20px;
+    background-color: #245b7a;
+    color: white;
+    border-radius: 8px;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+}
+
+/* Calculator section */
+.calculator {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: white;
+    border: 1px solid #d5dee5;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin: 14px 0 6px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    max-width: 360px;
+    padding: 10px;
+    border: 1px solid #aab7c2;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 18px 0;
+}
+
+/* Button styling and hover effect */
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2878a5;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #174d6c;
+}
+
+/* Result and checked date/time */
+#result {
+    margin-top: 22px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#checkedTime {
+    color: #596b78;
+    font-size: 13px;
+}
+
+/* Grade table styling */
+table {
+    border-collapse: collapse;
+    margin-top: 18px;
+    min-width: 280px;
+}
+
+th, td {
+    border: 1px solid #b8c6d1;
+    padding: 10px 18px;
+    text-align: left;
+}
+
+th {
+    background-color: #245b7a;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #edf3f7;
+}
